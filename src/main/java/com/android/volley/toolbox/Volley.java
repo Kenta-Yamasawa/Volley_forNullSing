@@ -21,6 +21,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.http.AndroidHttpClient;
 import android.os.Build;
+import android.view.View;
 
 import com.android.volley.Network;
 import com.android.volley.RequestQueue;
@@ -75,6 +76,6 @@ public class Volley {
      * @return A started {@link RequestQueue} instance.
      */
     public static RequestQueue newRequestQueue(Context context) {
-        return newRequestQueue(context, null);
+        return newRequestQueue((Context) context, null);
     }
 }
